@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesca's Timer ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- background decorations -->
+        <div class="parallax-bg">
+            <!-- Monstera Leaf -->
+            <svg class="leaf layer-1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M50 10C20 10 10 30 10 50C10 70 30 90 50 90C70 90 90 70 90 50C90 30 80 10 50 10Z M45 20C55 20 65 30 70 45 L65 45C60 35 50 25 45 25Z M30 35C40 30 50 35 55 45 L45 50C40 40 35 40 30 35Z M25 55C35 50 45 55 50 65 L40 65C35 55 30 60 25 55Z M55 75C65 70 75 60 75 45 L80 50C80 65 70 80 55 75Z"
+                    fill="currentColor" />
+            </svg>
+            <!-- Fern Leaf -->
+            <svg class="leaf layer-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M50 10 C45 30 40 50 40 90 C60 90 55 30 50 10Z M45 20 L30 15 L40 30Z M55 20 L70 15 L60 30Z M42 40 L20 35 L35 55Z M58 40 L80 35 L65 55Z M41 65 L15 65 L30 80Z M59 65 L85 65 L70 80Z"
+                    fill="currentColor" />
+            </svg>
+            <!-- Simple Leaf -->
+            <svg class="leaf layer-3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 10 C20 40 20 80 50 90 C80 80 80 40 50 10Z" fill="currentColor" />
+            </svg>
+            <svg class="leaf layer-4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Monstera offset -->
+                <path
+                    d="M50 10C20 10 10 30 10 50C10 70 30 90 50 90C70 90 90 70 90 50C90 30 80 10 50 10Z M45 20C55 20 65 30 70 45 L65 45C60 35 50 25 45 25Z M30 35C40 30 50 35 55 45 L45 50C40 40 35 40 30 35Z M25 55C35 50 45 55 50 65 L40 65C35 55 30 60 25 55Z M55 75C65 70 75 60 75 45 L80 50C80 65 70 80 55 75Z"
+                    fill="currentColor" />
+            </svg>
+            <svg class="leaf layer-5" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M50 10 C45 30 40 50 40 90 C60 90 55 30 50 10Z M45 20 L30 15 L40 30Z M55 20 L70 15 L60 30Z M42 40 L20 35 L35 55Z M58 40 L80 35 L65 55Z M41 65 L15 65 L30 80Z M59 65 L85 65 L70 80Z"
+                    fill="currentColor" />
+            </svg>
+            <svg class="leaf layer-6" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 10 C20 40 20 80 50 90 C80 80 80 40 50 10Z" fill="currentColor" />
+            </svg>
+            <svg class="leaf layer-7" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M50 10C20 10 10 30 10 50C10 70 30 90 50 90C70 90 90 70 90 50C90 30 80 10 50 10Z M45 20C55 20 65 30 70 45 L65 45C60 35 50 25 45 25Z M30 35C40 30 50 35 55 45 L45 50C40 40 35 40 30 35Z M25 55C35 50 45 55 50 65 L40 65C35 55 30 60 25 55Z M55 75C65 70 75 60 75 45 L80 50C80 65 70 80 55 75Z"
+                    fill="currentColor" />
+            </svg>
+        </div>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+
+        <div class="panels-wrapper">
+            <!-- Decorative Images -->
+            <img src="./capoo_bug_cat_1771657248603.png" class="deco-img capoo-img" alt="Capoo the bug cat">
+
+            <main class="glass-panel main-panel">
+                <header>
+                    <h1>✨ Francesca's Timer </h1>
+                    <p>Randomly bugging you like how you did then</p>
+                </header>
+
+                <div class="top-controls">
+                    <button class="icon-btn small-btn" id="themeToggleBtn" title="Toggle Theme">🌙</button>
+                    <button class="icon-btn small-btn" id="historyToggleBtn" title="History Log">📜</button>
+                </div>
+
+                <section class="config-section" id="configSection">
+                    <div class="input-group-row">
+                        <div class="input-group">
+                            <label for="minTime">Min Time (min)</label>
+                            <input type="number" id="minTime" min="0.1" step="any" value="5">
+                        </div>
+                        <div class="input-group">
+                            <label for="maxTime">Max Time (min)</label>
+                            <input type="number" id="maxTime" min="0.1" step="any" value="15">
+                        </div>
+                    </div>
+
+                    <div class="toggle-group" style="margin-bottom: 8px;">
+                        <label class="toggle">
+                            <input type="checkbox" id="hideTimer">
+                            <span class="slider"></span>
+                        </label>
+                        <span class="toggle-label">Hide timer (Surprise me!)</span>
+                    </div>
+
+                    <div class="toggle-group" style="margin-bottom: 8px;">
+                        <label class="toggle">
+                            <input type="checkbox" id="pomodoroMode">
+                            <span class="slider"></span>
+                        </label>
+                        <span class="toggle-label">Pomodoro Mode (Work/Break)</span>
+                    </div>
+
+                    <div class="input-group-row hidden" id="breakTimeGroup" style="margin-top: 16px;">
+                        <div class="input-group">
+                            <label for="breakMinTime">Break Min (min)</label>
+                            <input type="number" id="breakMinTime" min="0.1" step="any" value="3">
+                        </div>
+                        <div class="input-group">
+                            <label for="breakMaxTime">Break Max (min)</label>
+                            <input type="number" id="breakMaxTime" min="0.1" step="any" value="5">
+                        </div>
+                    </div>
+
+                    <div class="toggle-group" style="margin-bottom: 24px; margin-top: 16px;">
+                        <label class="toggle">
+                            <input type="checkbox" id="autoRestart" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <span class="toggle-label">Auto-restart after ping</span>
+                    </div>
+
+                    <div class="sound-controls">
+                        <div class="input-group">
+                            <label for="chimeSelect">Chime Sound</label>
+                            <div style="display: flex; gap: 8px; width: 100%;">
+                                <select id="chimeSelect">
+                                    <option value="bell">Soft Bell</option>
+                                    <option value="marimba">Warm Marimba</option>
+                                    <option value="synth">Space Synth</option>
+                                </select>
+                                <button class="secondary-btn" id="previewChimeBtn" style="padding: 0 16px;"
+                                    title="Preview Sound">▶</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sound-controls slider-group">
+                        <label for="volumeSlider">Volume</label>
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.6">
+                    </div>
+
+                    <button class="primary-btn" id="startBtn">
+                        <span class="btn-text">Start Timer</span>
+                        <span class="btn-icon">🌱</span>
+                    </button>
+                </section>
+
+                <section class="timer-section hidden" id="timerSection">
+                    <div class="timer-visual">
+                        <div class="progress-ring-container">
+                            <svg class="progress-ring" width="260" height="260">
+                                <!-- Semi-transparent background ring -->
+                                <circle class="progress-ring__background" stroke="rgba(255,255,255,0.2)"
+                                    stroke-width="12" fill="transparent" r="120" cx="130" cy="130" />
+                                <!-- Active progress ring -->
+                                <circle class="progress-ring__circle" id="progressRing" stroke="white" stroke-width="12"
+                                    fill="transparent" r="120" cx="130" cy="130" />
+                            </svg>
+
+                            <div class="breathing-circle" id="breathingCircle">
+                                <div class="time-display" id="timeDisplay">--:--</div>
+                                <div class="hidden-message" id="hiddenMessage">Growing...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timer-controls">
+                        <button class="secondary-btn" id="stopBtn">Cancel</button>
+                        <button class="icon-btn" id="testSoundBtn" title="Test Sound">🎵</button>
+                    </div>
+                </section>
+
+                <section class="history-section hidden" id="historySection">
+                    <h2>📜 Session History</h2>
+                    <ul id="historyList" class="history-list">
+                        <!-- History items will be populated here -->
+                    </ul>
+                    <button class="secondary-btn" id="closeHistoryBtn">Back</button>
+                </section>
+            </main>
+
+            <!-- Tasks/Notes Panel -->
+            <aside class="glass-panel notes-panel">
+                <header>
+                    <h2>📝 Cesca's Tasks</h2>
+                    <p>What are we focusing on?</p>
+                </header>
+
+                <div class="task-input-container">
+                    <input type="text" id="taskInput" placeholder="Add a new task..." autocomplete="off">
+                    <button class="icon-btn small-btn add-task-btn" id="addTaskBtn" title="Add Task">+</button>
+                </div>
+
+                <ul class="task-list" id="taskList">
+                    <!-- Task items will be dynamically added here -->
+                </ul>
+
+                <div class="custom-message-container">
+                    <div class="bulletin-pin"></div>
+                    <p class="bulletin-note" id="customMessage">You're doing great, Cesca! 💚</p>
+                </div>
+            </aside>
+        </div><!-- panels-wrapper -->
+
+        <footer class="app-footer">
+            Made for Francesca 2026 💚
+        </footer>
+    </div><!-- app-container -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
