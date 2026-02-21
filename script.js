@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Random Rotating Messages for Bulletin Note
     const sweetMessages = [
-        "You're doing great, bb! 💚 - (dont know what you call me but jbb)",
-        "Don't forget to drink water! 💧 - (dont know what you call me but jbb)",
-        "Chill ka lang. You got this! ✨ - (dont know what you call me but jbb)",
-        "Always here for you if you need anything!!! - (dont know what you call me but jbb)",
-        "One step at a time! 🐢 - (dont know what you call me but jbb)",
-        "Ayusin mo naman sleep sched mo pls lang - (dont know what you call me but jbb)",
-        "Sana masarap ulam niyo mamaya - (dont know what you call me but jbb)",
-        "Don't forget to take a break! 🚀 - (dont know what you call me but jbb)"
+        "You're doing great, bb! 💚 - (dont know what you call me)",
+        "Don't forget to drink water! 💧 - (dont know what you call me)",
+        "Chill ka lang. You got this! ✨ - (dont know what you call me)",
+        "Always here for you if you need anything!!! - (dont know what you call me)",
+        "One step at a time! 🐢 - (dont know what you call me)",
+        "Ayusin mo naman sleep sched mo pls lang - (dont know what you call me)",
+        "Sana masarap ulam niyo mamaya - (dont know what you call me)",
+        "Don't forget to take a break! 🚀 - (dont know what you call me)"
     ];
 
     if (customMessage) {
