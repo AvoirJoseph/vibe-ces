@@ -35,7 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Random Rotating Messages for Bulletin Note
     const sweetMessages = [
-        "You're doing great, bb! 💚 - (dont know what you call me)",
+        "DID YOU KNOW: If you click the 20th div on the cardinal direction of affinity, you'd get a pleasant surprise",
+        "Good luck with the studiess, padayon gurl - (dont know what you call me)",
+        "You're doing great, :O ! 💚 - (dont know what you call me)",
         "Don't forget to drink water! 💧 - (dont know what you call me)",
         "Chill ka lang. You got this! ✨ - (dont know what you call me)",
         "Always here for you if you need anything!!! - (dont know what you call me)",
